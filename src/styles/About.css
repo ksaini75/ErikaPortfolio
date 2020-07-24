@@ -1,0 +1,28 @@
+
+.aboutBox{
+    margin-top: 5%;
+}
+.aboutContent {
+ 
+    color:black;
+    font-size: 18px;
+}
+
+
+.picture{
+    width:50vh;
+    height: auto;
+    /* margin-left: 15%; */
+
+
+}
+
+.jumboContainer{
+ margin-top: 10%;
+ padding: 5% !important;
+ border-radius: 5px !important;
+   
+   
+  
+
+}
