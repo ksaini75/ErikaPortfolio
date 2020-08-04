@@ -53,7 +53,7 @@ class Resume extends Component{
   </VerticalTimelineElement>
   <VerticalTimelineElement
     className="vertical-timeline-element--work"
-    date="August 2018 to MArch 2020"
+    date="August 2018 to March 2020"
     iconStyle={{ background: '#e8d3eb', color: '#fff' }}
    
   >

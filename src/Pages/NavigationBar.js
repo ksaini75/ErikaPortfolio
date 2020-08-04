@@ -2,6 +2,7 @@ import React from 'react';
 import Nav from 'react-bootstrap/Nav';
 import Navbar from 'react-bootstrap/Navbar';
 import { Link } from "react-scroll";
+import '../styles/Navbar.css';
 
 
 
@@ -9,13 +10,15 @@ import { Link } from "react-scroll";
 
 const NavigationBar = () => (
    
-        <Navbar  expand="lg">
+        <Navbar  className="" >
+        <link href="https://fonts.googleapis.com/css2?family=Pacifico&display=swap" rel="stylesheet"></link>
             <Navbar.Brand href="/home"></Navbar.Brand>
+            <span className="Moya">Moya</span>
             <Navbar.Toggle aria-controls="basic-navbar-nav"/>
             <Navbar.Collapse id="basic-navbar-nav">
-            <Nav className ="ml-auto mx-auto">
+            <Nav className ="ml-auto">
 
-            <Nav.Item>
+            <Nav.Item className="px-2">
             <Nav.Link>
               <Link
                 activeClass="active"
@@ -29,7 +32,7 @@ const NavigationBar = () => (
             </Nav.Item>
             
 
-            <Nav.Item>
+            <Nav.Item className="px-2"> 
             <Nav.Link>
               <Link
                 activeClass="active"
@@ -42,7 +45,7 @@ const NavigationBar = () => (
                 </Nav.Link>
                 </Nav.Item>
 
-                <Nav.Item>
+                <Nav.Item className="px-2">
                 <Nav.Link>
                   <Link
                     activeClass="active"
@@ -50,13 +53,13 @@ const NavigationBar = () => (
                     spy={true}
                     smooth={true}
                     offset={-90}
-                    duration= {500}>Resume</Link>
+                    duration= {500}>Experience</Link>
                 {/* <Nav.Link href="/projects">Projects</Nav.Link> */}
                 </Nav.Link>
                 </Nav.Item>
 
                 
-                <Nav.Item>
+                <Nav.Item className="px-2">
                 <Nav.Link>
                   <Link
                     activeClass="active"
