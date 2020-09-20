@@ -5,11 +5,12 @@ import 'react-vertical-timeline-component/style.min.css';
 import '../styles/Resume.css';
 
 
-class Resume extends Component{
+class Experience extends Component{
     render(){
         return(
 <React.Fragment>
-<Container fluid className="Resume" id="Resume">
+
+<Container fluid className="Resume" id ="experience">
 
 <h1 className="resumeTitle"> Experience</h1>
 <VerticalTimeline>
@@ -119,4 +120,4 @@ class Resume extends Component{
     }
 }
 
-export default Resume;
+export default Experience;

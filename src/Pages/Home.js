@@ -1,15 +1,18 @@
 import React, {Component} from 'react';
 import Container from 'react-bootstrap/Container';
-import Resume from '../Pages/Resume';
+import Experience from '../Pages/Experience';
+
 
 import '../styles/Home.css'
 import About from '../Pages/About';
 import 'bootstrap/dist/css/bootstrap.min.css';
+import Footer from './Footer';
 
 class Home extends Component{
     render(){
         return(
 <React.Fragment>
+<div  id="home">
 <About/>
 
 <Container  className="homeTitle" id="home">
@@ -19,8 +22,11 @@ class Home extends Component{
 </Container>
 
 
-<Resume/>
+<Experience/>
+<Footer/>
+</div>
 </React.Fragment>
+
         )
     }
 }

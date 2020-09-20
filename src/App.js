@@ -4,7 +4,8 @@ import Home from './Pages/Home';
 import Layout from './Pages/Layout';
 import NavigationBar from './Pages/NavigationBar';
 import About from './Pages/About';
-import Resume from './Pages/Resume';
+
+import Experience from './Pages/Experience';
 
 // import About  from './components/About';
 // import Contact from './components/Contact';
@@ -30,10 +31,12 @@ class App extends Component{
           <Redirect exact from="/" to="/home" />
             <Route  exact path="/home" component={Home}/>
            
-            <Route  exact path="/About" component={About}/> 
+       
+            <Route  exact path="/About" component={About}/>  
            <Layout>
-           <Route  exact path="/Resume" component={Resume}/> 
+           <Route  exact path="/Experience" component={Experience}/> 
           </Layout>
+           
             {/* <Route  exact path="/Contact" component={Contact}/> */}
         
           

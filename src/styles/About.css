@@ -1,3 +1,37 @@
+@import url('https://fonts.googleapis.com/css2?family=Raleway:wght@200;300;400&family=Roboto+Mono:wght@500&display=swap');
+
+
+@media only screen and (max-width:1026px) {
+   
+   
+            .about-text{
+            font-family: 'Raleway', sans-serif;
+            font-weight: 500;
+            font-size:20px;
+                }
+
+            .about-image{
+                display: none !important;
+                }
+   
+            .about-header{
+                font-size:30px;
+                }
+            .mb2{
+                margin-left: 30px !important;
+            }
+            /* .bn{
+                width: 140px !important;
+                font-sized: 29px !important;
+            } */
+            .contact-button{ 
+               
+                text-align: center !important;
+                font-size: medium !important;
+            }
+}
+
+
 
 .aboutBox{
     /* margin-top: 5%; */
@@ -6,21 +40,26 @@
 .aboutContent {
  
     color:black;
-    font-size: 12px;
+    font-size: 16px;
 
+}
+
+.about-text{
+    font-family: 'Raleway', sans-serif;
+font-weight: 500;
 }
 
 
 .picture{
     width:50vh;
-    height: auto;
+    height: auto; 
     /* margin-left: 15%; */
 
 
 }
 
 .jumboContainer{
- margin-top: 10%;
+ margin-top: 5%;
  padding: 10% !important;
  background-color: #f8f9fa !important ;
    
@@ -38,6 +77,39 @@ border-radius: 50px !important;
   
 }
 
-.aboutHeader{
+.about-header{
     font-family: 'Pacifico', cursive;
+}
+
+.modal-color{
+    background-color: #EFDCD3 ;
+}
+
+.bn{
+    /* width: 250px !important; */
+    font-sized: 29px !important;
+}
+.contact-button{ 
+   
+    text-align: center !important;
+    font-size: large !important;
+}
+
+.swal-button{
+    background-color: #ffb700;
+
+}
+
+.swal-button--confirm:hover{
+    background-color: #ffb700 !important;
+    
+}
+
+.btn-outline-secondary{
+    border-color: white !important;
+    margin: 0 auto;
+}
+
+.modal-title{
+    margin: 0 auto;
 }
