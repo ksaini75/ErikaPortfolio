@@ -16,6 +16,8 @@
         margin-bottom: 10px;
     }
 
+  
+
 }
 
 
@@ -23,11 +25,13 @@
 
 
 .nav-link{    
-    font-size: 18px !important;
-    font-family: 'Quicksand', sans-serif !important;  
+    font-size: 17px !important;
+    font-family: 'Quicksand', sans-serif !important; 
+
+ 
 }
 
-.nav-link .active{
+.active-link{
     border-bottom: 5px solid #ffb700;
     border-bottom-left-radius: 5px;
     border-bottom-right-radius: 5px;

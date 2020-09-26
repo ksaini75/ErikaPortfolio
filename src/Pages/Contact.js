@@ -1,14 +1,10 @@
 import React, { useState, forwardRef, useImperativeHandle } from 'react'
 import * as emailjs from 'emailjs-com'
-
 import swal from 'sweetalert';
-
 import { Modal, ModalHeader, ModalBody, ModalFooter,Button} from 'reactstrap';
 import ReCAPTCHA from "react-google-recaptcha";
-
-// import Layout from '../components/layout'
 import { Form, FormGroup, Label, Input } from 'reactstrap'
-// import '../styles/About.css'
+
 const Contact = forwardRef((props,ref) => {
 
   const [displayModal,setDisplayModal]=useState(false);
@@ -85,7 +81,6 @@ return{
      })
 
   });
-    //  this.resetForm()
 
     hideModal();
     resetForm();
@@ -93,20 +88,15 @@ return{
 }
 
  const resetForm = () =>  {
-// grab the setState variables & change the state to empty which will reset the form
+
     setFullName('');
     setEmail('');
     setSubject('');
     setMessage('');
-    //hide()  ==> !showmodal()
+ 
     
  }
 
-
-// can only use the code below for class extends component 
-// handleChange = (param, e) => {
-//     this.setState({ [param]: e.target.value })
-//   }
 
     return (
       
@@ -115,21 +105,21 @@ return{
                 <ModalBody className="font-weight-bold">
 
                 <Form onSubmit={handleSubmit}>
-            <FormGroup controlId="formBasicEmail">
+            <FormGroup controlid="formBasicEmail">
               <Label className="d-block text-left">Email address</Label>
               <Input
                 type="email"
                 name="email"
                 value={email}
                 className="text-primary"
-                //this grabs the user information and change the state to a value
+              
                 onChange={e=>setEmail(e.target.value)}
                 placeholder="Enter email"
                 required
               />
             </FormGroup>
 
-<FormGroup controlId="formBasicName">
+<FormGroup controlid="formBasicName">
               <Label className="d-block text-left">Name</Label>
               <Input
                 type="text"
@@ -141,7 +131,7 @@ return{
                 required
               />
             </FormGroup>
-<FormGroup controlId="formBasicSubject">
+<FormGroup controlid="formBasicSubject">
               <Label className="d-block text-left">Subject</Label>
               <Input
                 type="text"
@@ -153,7 +143,7 @@ return{
                 required
               />
             </FormGroup>
-<FormGroup controlId="formBasicMessage">
+<FormGroup controlid="formBasicMessage">
               <Label className="d-block text-left">Message</Label>
               <Input
                 type="textarea"

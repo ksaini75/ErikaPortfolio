@@ -2,7 +2,7 @@ import React, {Component} from 'react';
 import Container from 'react-bootstrap/Container';
 import { VerticalTimeline, VerticalTimelineElement }  from 'react-vertical-timeline-component';
 import 'react-vertical-timeline-component/style.min.css';
-import '../styles/Resume.css';
+import '../styles/Experience.css';
 
 
 class Experience extends Component{
