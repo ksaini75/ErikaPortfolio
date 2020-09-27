@@ -9,7 +9,6 @@ import NavigationBar from './Pages/NavigationBar';
 class App extends Component{
   render() {
     return(
-   
     <React.Fragment>
     <NavigationBar/>
    
