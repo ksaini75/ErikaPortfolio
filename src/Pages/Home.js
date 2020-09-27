@@ -10,14 +10,14 @@ import '../styles/Home.css'
 class Home extends Component{
     render(){
         return(
-<React.Fragment>
+
 <div  id="home">
 <About/>
 <Container  className="homeTitle" id="home"></Container>
 <Experience/>
 <Footer/>
 </div>
-</React.Fragment>
+
 
         )
     }
