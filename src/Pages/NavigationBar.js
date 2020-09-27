@@ -13,7 +13,6 @@ import Image from 'react-bootstrap/Image';
 toast.configure()
 
 function NavigationBar () {
-
 const notify = () => {
   toast.warning ('📃 Downloading Resume!', 
   { position: toast.POSITION.TOP_CENTER}
