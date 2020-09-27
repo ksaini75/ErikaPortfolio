@@ -53,7 +53,6 @@ return{
     }
 
     const handleVerification=(templateParams)=>{
-     
       if(isVerified){
      emailjs.send(
       process.env.REACT_APP_SERVICE_ID,
