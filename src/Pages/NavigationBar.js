@@ -14,13 +14,11 @@ toast.configure()
 
 function NavigationBar () {
 
-
 const notify = () => {
   toast.warning ('📃 Downloading Resume!', 
   { position: toast.POSITION.TOP_CENTER}
   )
 }
-
   return (
   <React.Fragment>
   <Navbar expand="lg"  className="sticky-top">
