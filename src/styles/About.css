@@ -1,28 +1,134 @@
+@import url('https://fonts.googleapis.com/css2?family=Raleway:wght@200;300;400&family=Roboto+Mono:wght@500&display=swap');
+
+
+@media only screen and (max-width:1026px) {
+   
+   
+            .about-text{
+            font-family: 'Raleway', sans-serif;
+            font-weight: 500;
+            font-size:20px;
+                }
+
+            .about-image{
+                display: none !important;
+                }
+   
+            .about-header{
+                font-size:30px;
+                }
+            .mb2{
+                margin-left: 30px !important;
+            }
+            /* .bn{
+                width: 140px !important;
+                font-sized: 29px !important;
+            } */
+            .contact-button{ 
+               
+                text-align: center !important;
+                font-size: medium !important;
+            }
+}
+
+
 
 .aboutBox{
-    margin-top: 5%;
+    /* margin-top: 5%; */
+    background-color: #f8f9fa !important ;
 }
 .aboutContent {
  
     color:black;
-    font-size: 18px;
+    font-size: 16px;
+
+}
+
+.about-text{
+    font-family: 'Raleway', sans-serif;
+font-weight: 500;
 }
 
 
 .picture{
     width:50vh;
-    height: auto;
+    height: auto; 
     /* margin-left: 15%; */
 
 
 }
 
 .jumboContainer{
- margin-top: 10%;
- padding: 5% !important;
- border-radius: 5px !important;
-   
+ margin-top: 5%;
+ padding: 10% !important;
+ background-color: #f8f9fa !important ;
    
   
 
+}
+
+.button {
+border-radius: 50px !important;
+}
+
+.test{
+
+  top: -150px;
+  
+}
+
+.about-header{
+    font-family: 'Pacifico', cursive;
+}
+
+.modal-color{
+    background-color: #EFDCD3 ;
+}
+
+.bn{
+
+    font-sized: 29px !important;
+}
+.contact-button{ 
+   
+    text-align: center !important;
+    font-size: large !important;
+}
+
+.swal-button{
+    background-color: #ffb700;
+
+}
+
+.swal-button--confirm:hover{
+    background-color: #ffb700 !important;
+    
+}
+
+.btn-outline-secondary{
+    border-color: white !important;
+    margin: 0 auto;
+}
+
+.modal-title{
+    margin: 0 auto;
+}
+
+
+
+.swal-text {
+    font-size: 16px;
+    position: relative;
+    float: none;
+    line-height: normal;
+    vertical-align: top;
+    text-align: center;
+    display: inline-block;
+    margin: 0;
+    padding: 0 10px;
+    font-weight: 400;
+    color: rgba(0,0,0,.64);
+    max-width: calc(100% - 20px);
+    overflow-wrap: break-word;
+    box-sizing: border-box;
 }

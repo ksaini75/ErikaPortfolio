@@ -1,59 +1,58 @@
-import React, {Component} from 'react';
+import React from 'react';
 import Container from 'react-bootstrap/Container';
 import Jumbotron from 'react-bootstrap/Jumbotron';
 import Row from 'react-bootstrap/Row';
 import Image from 'react-bootstrap/Image';
 import Col from 'react-bootstrap/Col';
-import ReactTypingEffect from 'react-typing-effect';
-import Typical from 'react-typical'
+import {useRef} from 'react';
+import Contact from '../Pages/Contact';
+import Erika from '../Images/erika_profile_2.png';
 import '../styles/About.css'
 import 'bootstrap/dist/css/bootstrap.min.css';
+import 'tachyons';
+const About = () => {
+        const ref=useRef();
+        const openModal=()=>{ref.current.showModal();}
+       
+      
 
-import flowers from '../Images/flowers.jpg';
-
-class Home extends Component{
-    render(){
         return(
+           
+        <React.Fragment>
+         <Jumbotron className="jumboContainer" fluid id="about">
+                <Container >
+                <link href="https://fonts.googleapis.com/css2?family=Pacifico&display=swap" rel="stylesheet"></link>
+                <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@200&display=swap" rel="stylesheet"></link>
 
-<React.Fragment>
-
-<Container className ="aboutBox">
-<Jumbotron className="jumboContainer" fluid>
-
-
-
-<Container >
-
-<h1>about me...</h1>
-<Row>
+        <h1 className="about-header">Erika Moya</h1>
+        <Row>
+        
         <Col className="aboutContent" lg={6}>
 
         <br/>
-        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras vitae rutrum mauris, vitae pulvinar turpis. 
-        Morbi finibus sapien in orci semper ultrices. Etiam urna erat, finibus a quam in, fermentum aliquam justo. 
-        Maecenas accumsan interdum lorem eget euismod. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. 
-        Cras gravida neque ut hendrerit egestas. Phasellus fermentum nisl eget venenatis rutrum. 
-        Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia curae; Lorem ipsum dolor sit amet, consectetur adipiscing elit. 
-        Duis facilisis est sed velit vehicula fermentum. Morbi volutpat velit ut finibus lobortis. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos.
-        Ut suscipit suscipit ante, blandit rutrum sapien mattis ac. Nullam ut libero eu tellus condimentum pharetra. Curabitur sed faucibus massa. Proin eleifend nisl a nunc aliquet, non suscipit massa iaculis. 
-        Aliquam a felis aliquet odio convallis laoreet ut eu lacus. Curabitur pretium, augue vel rutrum imperdiet, erat dui dignissim nisi, non mollis purus felis sit amet sapien. 
-        Proin eget accumsan eros. Donec ante erat, ultrices nec mi quis, consequat viverra quam. 
-        Curabitur ac sem nec tellus finibus tempor. Phasellus tincidunt eu nisl et congue. 
-        Aliquam et dictum elit, non maximus metus. Sed placerat, risus consequat malesuada elementum, nulla arcu dapibus lorem, a rutrum augue leo et metus.
-
-</p></Col>
-        <Col className="about" lg={6}>
-        <Image className="picture" src={flowers}/>
+        <p className="about-text">Erika Moya is an Alumni of Pace University on the Pleasantville campus. 
+        Erika has obtained a Master’s degree in Mental Health Counseling. 
+        She is very open-minded to working with all populations for her professional development growth. 
+        Erika is very passionate in working with others to help them grow, heal, and become empowered. 
+        She seeks to provide an environment where clients can feel safe and welcomed to express themselves freely and work toward a healthy therapeutic relationship.
+        </p>   
+        <br/>
+        <Contact ref={ref}/>
+        <button className="f6 grow bn br-pill ph3 pv2 mb2 dib bg-gold contact-button" onClick={() => openModal()}>Contact Me</button>
         </Col>
-      </Row>
 
-</Container>
-</Jumbotron>
-</Container>
+        <Col className="about" lg={6}>
+         <Image className="about-image" src={Erika}/>
+        </Col>
+        </Row>
 
+        <br/>
+        </Container>
+         </Jumbotron>
+         <div></div>
 </React.Fragment>
         )
     }
-}
 
-export default Home;
+
+export default About;

@@ -1,0 +1,57 @@
+
+@media only screen and (max-width:768px) {
+   
+    .Moya{
+        font-size: 30px; 
+        margin-left: 30px;
+    }
+    .navbar-nav .nav-link {
+        padding-right: 0;
+        padding-left: 0;
+        text-align: center; 
+    }
+    .erika-icon{
+        width: 90px;
+        margin-left: 40px;
+        margin-bottom: 10px;
+    }
+
+  
+
+}
+
+
+
+
+
+.nav-link{    
+    font-size: 17px !important;
+    font-family: 'Quicksand', sans-serif !important; 
+
+ 
+}
+
+.active-link{
+    border-bottom: 5px solid #ffb700;
+    border-bottom-left-radius: 5px;
+    border-bottom-right-radius: 5px;
+}
+
+
+Link{
+    font-family: 'Quicksand', sans-serif !important;
+}
+
+.Moya{
+
+    font-family: 'Pacifico', cursive;
+    color: #9370DB ;
+}
+
+.sticky-top{
+    background-color:white;
+}
+
+.erika-icon{
+    width: 100px;
+}

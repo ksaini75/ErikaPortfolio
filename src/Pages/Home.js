@@ -1,30 +1,24 @@
 import React, {Component} from 'react';
 import Container from 'react-bootstrap/Container';
-import Resume from '../Pages/Resume';
-import Typical from 'react-typical'
-import '../styles/Home.css'
+import Experience from '../Pages/Experience';
 import About from '../Pages/About';
+import Footer from './Footer';
 import 'bootstrap/dist/css/bootstrap.min.css';
+import '../styles/Home.css'
+
 
 class Home extends Component{
     render(){
         return(
 <React.Fragment>
-
-<Typical className="typer"
-        steps={[ 'Hello, my name is Erika!', 500]}
-        loop={Infinity}
-        wrapper="p"
-      />
-<Container  className="homeTitle" id="home">
-
-
-
-</Container>
-
+<div  id="home">
 <About/>
-<Resume/>
+<Container  className="homeTitle" id="home"></Container>
+<Experience/>
+<Footer/>
+</div>
 </React.Fragment>
+
         )
     }
 }
