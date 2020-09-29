@@ -65,7 +65,7 @@ return{
        text: "We can't wait to work with you, " + fullname + "!",
        icon: "success",
        dangerMode: false,
-       timer: 2500,
+       timer: 5000,
        buttons: {cancel : null}
      })
 
@@ -75,7 +75,7 @@ return{
        text: "Message not sent please email us directly: moyaerika5@gmail.com",
        icon: "error",
        dangerMode: true,
-       timer: 2500,
+       timer: 5000,
        buttons: { cancel: null }
      })
 
@@ -109,6 +109,7 @@ return{
               <Input
                 type="email"
                 name="email"
+                pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,}$" 
                 value={email}
                 className="text-primary"
               
